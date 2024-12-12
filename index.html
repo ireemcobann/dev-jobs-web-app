@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d1d2f860d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>devJobs web Apps</title>
+    <link rel="stylesheet" href="assets/css/jobs.css" />
+    <script src="assets/js/jobs.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img src="assets/images/devjobs.svg" alt="" />
+        <div class="header-right">
+          <i class="fa-regular fa-sun"></i>
+          <label class="switch"
+            ><input id="toggle-theme" type="checkbox" /><span
+              class="slider round"
+            ></span
+          ></label>
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <form id="job-filter-form">
+        <input
+          type="text"
+          name="filter"
+          placeholder="Filter by title, companies, expertise…"
+        />
+        <input type="text" name="location" placeholder="Filter by location…" />
+        <label>
+          <input type="checkbox" name="fulltime" /> Full Time Only
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <div class="container-grid">
+        <ul id="jobsList"></ul>
+       
+      </div>
+    </div>
+  </body>
+</html>
